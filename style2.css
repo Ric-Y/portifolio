@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --cor1: #6f807b;
+  --cor2: #c5d9d3;
+  --cor3: #a8bbb6;
+  --cor4: #8c9e98;
+  --cor5: #e2f6f0;
+  --borda: #525a58;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: var(--cor4);
+  height: 100%;
+}
+
+/* Classes reutilizáveis */
+.container {
+  max-width: 100%;
+  padding: 0 5%;
+  margin: auto;
+}
+
+.botao1 {
+  position: relative;
+  appearance: button;
+  background-color: var(--cor2);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: max-content;
+align-self: center;
+}
+
+.botao1::after {
+  background-clip: padding-box;
+  background-color: var(--cor3);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.botao1:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.botao1:disabled {
+  cursor: auto;
+}
+
+.botao1:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+/* Cabeçalho --------------------------------------------*/
+.header-background {
+  background-color: var(--cor1);
+}
+
+/* Garantir que a imagem possa crescer */
+main .container > div:last-child {
+  overflow: visible;
+}
+
+main .container img {
+  width: 200%;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.logo a {
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menu li {
+  margin: 0 30px;
+  font-size: medium;
+}
+
+.menu li a {
+  color: #fff;
+}
+/*não mexer em nada acima*/
+
+body {
+    background-color: var(--cor3);
+}
+.container{
+    background-color: var(--cor1);
+    padding: 10px; 
+    border: 2px solid var(--borda);
+}
+
+.genericcontainer{
+    margin-top: 60px;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    margin: 5px;
+    padding: 10px;
+}
+
+button{
+    background-color: var(--cor5);
+    border-radius: 10px;
+    margin: 20px;
+    border: 2px var(--borda);
+    width: 100px;
+    height: auto;
+}
+
+.espaço{
+    margin-top: 20px;
+    background-color: var(--cor2);
+     padding: 10px;
+     border: none;
+
+    }
+
+h1 {
+    color: white;
+}

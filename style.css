@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --cor1: #6f807b;
+  --cor2: #c5d9d3;
+  --cor3: #a8bbb6;
+  --cor4: #8c9e98;
+  --cor5: #e2f6f0;
+  --borda: #525a58;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: var(--cor4);
+  height: 100%;
+}
+
+/* Classes reutilizáveis */
+.container {
+  max-width: 100%;
+  padding: 0 5%;
+  margin: auto;
+}
+
+.botao1 {
+  position: relative;
+  appearance: button;
+  background-color: var(--cor2);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: max-content;
+align-self: center;
+}
+
+.botao1::after {
+  background-clip: padding-box;
+  background-color: var(--cor3);
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.botao1:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.botao1:disabled {
+  cursor: auto;
+}
+
+.botao1:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+/* Cabeçalho --------------------------------------------*/
+.header-background {
+  background-color: var(--cor1);
+}
+
+/* Garantir que a imagem possa crescer */
+main .container > div:last-child {
+  overflow: visible;
+}
+
+main .container img {
+  width: 200%;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.logo a {
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menu li {
+  margin: 0 30px;
+  font-size: medium;
+}
+
+.menu li a {
+  color: #fff;
+}
+
+/* Conteúdo principal --------------------------------------------------------------*/
+.area-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 5%;
+}
+
+.texto_principal {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.texto_principal h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.botao1 {
+  display: flex;
+  align-self: center; 
+}
+
+
+
+.imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+/* não mexer em nada acima daqui---------------------------------------*/
+
+main .container{
+  background-color: var(--cor1);
+  margin: auto;
+  margin-top: 90px;
+  padding: 50px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.embaixo_do_main{
+  background-color: var(4);
+  margin: auto;
+  padding: 100px;
+}
+
+h3{
+  font-size: xx-large;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.caixas_de_texto{
+  background-color: #6f807b;
+  padding: 5%;
+  margin-top: 30px;
+  border: 2px solid var(--borda);
+  border-radius: 20px;
+}
+
+p{
+  font-size: medium;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+/* parte raciocinio algoritmico---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.espaço_dos_Trabalhos{
+
+  background-color: #6f807b;
+  padding: 5%;
+  margin-top: 40px;
+  border: 2px solid var(--borda);
+  border-radius: 20px;
+  margin: 50px;
+}
+ .links_download{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+ }
+
+ .links_download li a{
+  color: white;
+ }
+
+ .links_download li a:hover{
+  color: rgb(50, 105, 62);
+ }
+ 
+
+ .imagem_pucpr{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  max-width: fit-content;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+ }
+
+ .videofilosofia{
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+ }
+
+.parte_final_filosofia{
+  background-color: #6f807b;
+  margin: 50px;
+  padding: 5%;
+  margin-top: 30px;
+  border: 2px solid var(--borda);
+  border-radius: 20px;
+}
+
+ .videofilosofia2{
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+ }
+
+ .imagens_trabalhos{
+  background-color: #6f807b;
+  padding: 5%;
+  margin-top: 40px;
+  border: 2px solid var(--borda);
+  border-radius: 20px;
+  margin: 50px;
+ }
+
+ .imagens_trabalhos ul{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  color: white;
+ }
+
+ .imagem_geral{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+ }
+
+ h4{
+  font-size: x-large;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+ }
+
+.TDEs{
+  margin-bottom: 50px;
+}
+
+.TDEs li a{
+  color: white;
+ }
+
+.TDEs li a:hover{
+  color: rgb(50, 105, 62);
+ }
+
+.TDEs_especial{
+  background-color: #6f807b;
+  padding: 5%;
+  margin-top: 40px;
+  border: 2px solid var(--borda);
+  border-radius: 20px;
+  margin: 50px;
+  margin-bottom: 50px;
+}
+.TDEs_especial li{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+ .TDEs_especial li a{
+  color: white;
+ }
+
+.TDEs_especial li a:hover{
+  color: rgb(50, 105, 62);
+ }
+
+.criativa2{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  flex-direction: column;
+ }
+
+ .criativa2 img{
+max-width: 100%;
+ }
+
+.criativa2 li a{
+  color: white;
+  font-size: 50px;
+ }
+
+ .criativa2 li a:hover{
+  color: rgb(50, 105, 62);
+ }
